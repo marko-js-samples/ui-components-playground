@@ -1,0 +1,15 @@
+style.less {
+  .app-notifications {
+    position: fixed;
+    top: 0px;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+  }
+}
+
+<div class="app-notifications">
+  <for(notification in state.notifications)>
+    <app-notification(notification) key=notification.id />
+  </for>
+</div>

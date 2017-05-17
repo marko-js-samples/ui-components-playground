@@ -1,0 +1,27 @@
+{
+  "name": "ui-components-playground",
+  "version": "1.0.0",
+  "description": "Components Playground",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marko-js-samples/ui-components-playground"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.13.0",
+    "eslint-config-marko": "^1.0.1"
+  },
+  "dependencies": {
+    "marked": "^0.3.6",
+    "marko": "^4.2.4",
+    "marko-starter": "^1.0.0",
+    "raptor-pubsub": "^1.0.5",
+    "raptor-util": "^1.1.2",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "scripts": {
+    "start": "marko-starter server",
+    "build": "marko-starter build"
+  },
+  "private": true
+}
