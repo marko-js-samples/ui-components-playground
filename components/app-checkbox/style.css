@@ -1,15 +1,15 @@
 .app-button.app-checkbox {
-  background-color: @button-secondary-bg;
-  color: @button-secondary-fg;
+  background-color: #999999;
+  color: #ffffff;
 }
 
 .app-button.app-checkbox.checked {
-  background-color: @button-bg;
-  color: @button-fg;
+  background-color: #2980b9;
+  color: #ffffff;
 }
 
 .app-checkbox-icon {
-  background-image: url(./images/unchecked.svg);
+  background-image: url(images/unchecked.svg);
   background-size: contain;
   width: 18px;
   height: 18px;
@@ -20,6 +20,6 @@
 }
 
 .app-checkbox.checked .app-checkbox-icon {
-  background-image: url(./images/checked.svg);
+  background-image: url(images/checked.svg);
   opacity: 1.0;
 }

@@ -1,12 +1,9 @@
-.app-sections {
-
-}
 .tableOfContents {
   position: fixed;
   right: 15px;
   top: 15px;
   background-color: #f7f7f9;
-  box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   padding: 1em;
 }
 

@@ -2,26 +2,25 @@
   display: inline-block;
   border-radius: 50px;
   padding: 12px;
-  background-color: @button-bg;
-  color: @button-fg;
-
+  background-color: #2980b9;
+  color: #ffffff;
   transition-property: background-color;
   transition-duration: .3s;
   transition-timing-function: ease-out;
 }
 
 .app-button:hover {
-  background-color: lighten(@button-bg, 10%);
+  background-color: #409ad5;
 }
 
 /* Variants */
 .app-button-secondary {
-  background-color: @button-secondary-bg;
-  color: @button-secondary-fg;
+  background-color: #999999;
+  color: #ffffff;
 }
 
 .app-button-secondary:hover {
-  background-color: lighten(@button-secondary-bg, 10%);
+  background-color: #b3b3b3;
 }
 
 /* Sizes */

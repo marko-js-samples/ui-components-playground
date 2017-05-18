@@ -1,7 +1,3 @@
-.app-tabs .tab {
-
-}
-
 .app-tabs ul.tab-nav {
   padding-left: 0;
   list-style: none;
@@ -14,7 +10,7 @@
 .app-tabs ul.tab-nav > li > a {
   margin-right: 2px;
   line-height: 1.42857143;
-  border: 1px solid @button-secondary-bg;
+  border: 1px solid #999999;
   margin-left: 10px;
   border-radius: 4px 4px 0 0;
   padding-left: 1em;
@@ -23,8 +19,8 @@
   padding-top: 0.5em;
   display: inline-block;
   margin-bottom: -1px;
-  background-color: @button-secondary-bg;
-  color: @button-secondary-fg;
+  background-color: #999999;
+  color: #ffffff;
 }
 
 .app-tabs ul.tab-nav > li:first-child > a {
@@ -39,12 +35,11 @@
 
 .app-tabs .tab-panes {
   clear: both;
-
 }
 
 .app-tabs .tab-pane {
   display: none;
-  border: 1px solid  @button-secondary-bg;
+  border: 1px solid #999999;
   padding: 1em;
 }
 
