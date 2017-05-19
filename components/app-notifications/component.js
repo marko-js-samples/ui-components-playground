@@ -3,9 +3,9 @@ var raptorPubsub = require('raptor-pubsub');
 var nextId = 0;
 
 module.exports = {
-  onInput () {
+  onInput (input) {
     this.state = {
-      notifications: []
+      notifications: input.notifications || []
     };
   },
 

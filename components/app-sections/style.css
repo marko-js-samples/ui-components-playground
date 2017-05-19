@@ -1,4 +1,16 @@
 .tableOfContents {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+
+.tableOfContents ul, ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.tableOfContents {
   position: fixed;
   right: 15px;
   top: 15px;

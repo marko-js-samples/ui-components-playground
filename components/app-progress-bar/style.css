@@ -1,3 +1,13 @@
+.app-progress-bar {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+
+.app-progress-bar a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
 .app-progress-bar .progress-step {
   display: inline-block;
   height: 2em;
