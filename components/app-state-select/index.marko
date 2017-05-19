@@ -46,7 +46,6 @@ style.css {
   </select>
 
   <div if(state.stateIndex != null)>
-    You selected:
-    <div class=['state-icon', states[state.stateIndex].value] />
+    You selected: ${states[state.stateIndex].value}
   </div>
 </div>
