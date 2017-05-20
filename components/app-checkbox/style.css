@@ -8,6 +8,16 @@
   color: #ffffff;
 }
 
-.app-checkbox.checked .app-checkbox-icon {
+.app-checkbox-icon:after {
   opacity: 1.0;
+  content: '☐';
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  margin-right: 5px;
+  line-height: 18px;
+}
+
+.app-checkbox.checked .app-checkbox-icon:after {
+  content: '☑';
 }
