@@ -13,15 +13,17 @@
   },
   "dependencies": {
     "marked": "^0.3.6",
-    "marko": "^4.2.4",
-    "marko-starter": "^1.0.0",
+    "marko": "^4.4.28",
+    "marko-starter": "^2.0.1",
     "raptor-pubsub": "^1.0.5",
     "raptor-util": "^1.1.2",
     "whatwg-fetch": "^2.0.3"
   },
   "scripts": {
     "start": "marko-starter server",
-    "build": "marko-starter build"
+    "serve-static": "marko-starter serve-static",
+    "build": "marko-starter build",
+    "build-prod": "LASSO_TIMEOUT=200000 NODE_ENV=production npm run build"
   },
   "private": true
 }
