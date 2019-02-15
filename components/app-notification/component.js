@@ -7,7 +7,7 @@ module.exports = {
   },
 
   onMount: function () {
-    var el = this.el;
+    const el = this.getEl("root");
     setTimeout(function () {
       el.style.opacity = 1;
       el.style.maxHeight = '60px';
@@ -15,7 +15,7 @@ module.exports = {
   },
 
   fadeOut: function (callback) {
-    var el = this.el;
+    const el = this.getEl("root");
     el.style.opacity = 0;
     setTimeout(callback, 300);
   }

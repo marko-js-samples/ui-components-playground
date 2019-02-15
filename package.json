@@ -9,15 +9,16 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^3.13.0",
-    "eslint-config-marko": "^1.0.1"
+    "eslint-config-marko": "^1.0.1",
+    "marko-cli": "^6.0.3"
   },
   "dependencies": {
-    "marked": "^0.3.6",
-    "marko": "^4.4.28",
-    "marko-starter": "^2.0.1",
+    "marked": "^0.6.0",
+    "marko": "^4.15.0",
+    "marko-starter": "^2.0.4",
     "raptor-pubsub": "^1.0.5",
     "raptor-util": "^1.1.2",
-    "whatwg-fetch": "^2.0.3"
+    "whatwg-fetch": "^3.0.0"
   },
   "scripts": {
     "start": "marko-starter server",

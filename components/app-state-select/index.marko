@@ -1,15 +1,13 @@
-static {
-  var states = [
-    {
-      name: 'Colorado',
-      value: 'CO'
-    },
-    {
-      name: 'California',
-      value: 'CA'
-    }
-  ];
-}
+static const states = [
+  {
+    name: "Colorado",
+    value: "CO"
+  },
+  {
+    name: "California",
+    value: "CA"
+  }
+];
 
 class {
   onInput() {
@@ -27,7 +25,7 @@ class {
   }
 }
 
-style.css {
+style {
   .state-icon {
     width: 75px;
     height: 50px;
@@ -36,16 +34,17 @@ style.css {
 
 <div>
   <h3>Choose a state</h3>
-  <select onChange('handleSelectChange')>
-    <option value='' selected=(state.stateIndex == null)>(choose a state)</option>
-    <for(index, stateInfo in states)>
-      <option value=stateInfo.value selected=(state.stateIndex === index)>
+
+  <select onChange("handleSelectChange")>
+    <option value="" selected=(state.stateIndex == null)>(choose a state)</option>
+    <for|stateInfo, i| of=states>
+      <option value=stateInfo.value selected=(state.stateIndex === i)>
         ${stateInfo.name}
       </option>
     </for>
   </select>
 
-  <div if(state.stateIndex != null)>
-    You selected: ${states[state.stateIndex].value}
-  </div>
+  <if(state.stateIndex != null)>
+    <div>You selected: ${states[state.stateIndex].value}</div>
+  </if>
 </div>

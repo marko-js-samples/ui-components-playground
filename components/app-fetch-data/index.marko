@@ -1,11 +1,11 @@
-import { getUsers } from '../../services/users';
+import { getUsers } from "../../services/users";
 
 class {
   onInput(input) {
-    var users = [];
-    var pageIndex = -1;
+    let users = [];
+    let pageIndex = -1;
 
-    var usersData = input.usersData;
+    const usersData = input.usersData;
     if (usersData) {
       users = usersData.users;
       pageIndex = usersData.pageIndex;
@@ -27,9 +27,8 @@ class {
   }
 
   loadMore() {
-    this.state.loading = true;
-
-    var state = this.state;
+    const state = this.state;
+    state.loading = true;
 
     this.fetchPromise = this.fetchPromise
       .then(function() {
@@ -43,7 +42,7 @@ class {
       })
       .catch(function(e) {
         state.loading = false;
-        console.log('Fetch failed:', e);
+        console.log("Fetch failed:", e);
       });
   }
 
@@ -53,7 +52,7 @@ class {
 
   onUpdate() {
     if (this.state.pageIndex > 0) {
-      var tableContainer = this.getEl('tableContainer');
+      const tableContainer = this.getEl("tableContainer");
       tableContainer.scrollTop = tableContainer.scrollHeight;
     }
   }
@@ -61,27 +60,36 @@ class {
 
 <div.app-fetch-data>
   <div class="table-container" key="tableContainer">
-    <table if(state.users.length)>
-      <thead>
-        <tr>
-          <td>ID</td>
-          <td>Avatar</td>
-          <td>Name</td>
-          <td>Email</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr for(user in state.users)>
-          <td>${user.id}</td>
-          <td><img src=user.avatar width=50 height=50></td>
-          <td>${user.firstName} ${user.lastName}</td>
-          <td>${user.email}</td>
-        </tr>
-      </tbody>
-    </table>
+    <if(state.users.length)>
+      <table>
+        <thead>
+          <tr>
+            <td>ID</td>
+            <td>Avatar</td>
+            <td>Name</td>
+            <td>Email</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <for|user| of=state.users>
+            <tr>
+              <td>${user.id}</td>
+              <td>
+                <img src=user.avatar width=50 height=50/>
+              </td>
+              <td>${user.firstName} ${user.lastName}</td>
+              <td>${user.email}</td>
+            </tr>
+          </for>
+        </tbody>
+      </table>
+    </if>
   </div>
+
   <app-button
-    label=(state.users.length ? "Load more users" : 'Load users')
-    onClick('handleLoadMoreClick')/>
-  <span class=[state.loading ? 'loading' : null]/>
+    label=(state.users.length ? "Load more users" : "Load users")
+    onClick("handleLoadMoreClick")/>
+
+  <span class=[state.loading ? "loading" : null]/>
 </div>
